@@ -1,22 +1,17 @@
 const sumAll = function(start, end) {
-  let num = 0;
 
-  if(typeof start !== 'number'|| 
-    typeof end !== 'number' ||
-    start < 0 ||
-    end < 0
-    ) {
+  const verifyInvalidNumber = (number) => typeof number !== "number" || number < 0;
+
+  if (verifyInvalidNumber(start) || verifyInvalidNumber(end)) {
     return "ERROR"
+  }
 
-  } else if (start < end) {
-    for(i = start; i <= end; i++) {
-      num += i
-    }   
+  let num = 0;
+  const min = Math.min(start, end)
+  const max = Math.max(start, end)
 
-  } else if (start > end) {
-    for (i = end; i <=start; i++) {
-      num += i
-    }
+  for(min; min <= max; min++) {
+    num += min
   }
   return num;
 };
