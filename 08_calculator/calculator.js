@@ -2,13 +2,9 @@ const add = (a, b) => a + b;
 
 const subtract = (a, b) => a - b;
 
-const sum = function(arrayNumbers) {
-  let total = 0;
-  for (number of arrayNumbers) {
-    total += parseFloat(number);
-  }
-  return total
-};
+const sum = function(array) {
+  return array.reduce((total, num) => total + num, 0)
+}
 
 const multiply = function(arrayNumbers)  {
   let total = 1;
