@@ -1,6 +1,6 @@
 const palindromes = function (string) {
-processedString = string.toLowerCase().replace(/[^a-z0-9]/g, '')
-reversedString = processedString.split('').reverse().join('')
+const processedString = string.toLowerCase().replace(/[^a-z0-9]/g, '')
+const reversedString = processedString.split('').reverse().join('')
 return reversedString === processedString
 };
 
