@@ -6,13 +6,9 @@ const sum = function(array) {
   return array.reduce((total, num) => total + num, 0)
 }
 
-const multiply = function(arrayNumbers)  {
-  let total = 1;
-  for (number of arrayNumbers) {
-    total *= parseFloat(number);
-  }
-  return total
-};
+const multiply = function(array) {
+  return array.reduce((product, num) => product * num, 1)
+}
 
 const power = function(base, powerTo) {
   let total = 1;
