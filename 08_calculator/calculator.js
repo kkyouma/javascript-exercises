@@ -1,10 +1,6 @@
-const add = function(firstNumber, secondNumber) {
-	 return firstNumber + secondNumber
-};
+const add = (a, b) => a + b;
 
-const subtract = function(firstNumber, secondNumber) {
-	return firstNumber - secondNumber
-};
+const subtract = (a, b) => a - b;
 
 const sum = function(arrayNumbers) {
   let total = 0;
