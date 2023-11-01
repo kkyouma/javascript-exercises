@@ -1,7 +1,8 @@
 const fibonacci = function(n) {
 
 let secuence = [0, 1]
-if (typeof n !== 'number') {
+n = parseInt(n)
+if (typeof n !== 'number' || n < 0) {
   return "OOPS"
 } else {
   for(i = 2; i <= n; i++) {
